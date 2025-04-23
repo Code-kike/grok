@@ -1,0 +1,29 @@
+{
+  "name": "grokproxy",
+  "version": "1.0.0",
+  "description": "Grok to OpenAI API proxy. Serverless!",
+  "main": "node.mjs",
+  "scripts": {
+    "start": "node node.mjs",
+    "dev": "nodemon node.mjs",
+    "start:deno": "deno run --allow-net --allow-env deno.mjs",
+    "dev:deno": "deno run --allow-net --allow-env --watch deno.mjs",
+    "start:bun": "bun bun.mjs",
+    "dev:bun": "bun --watch bun.mjs"
+  },
+  "keywords": [
+    "grok",
+    "api",
+    "proxy",
+    "openai",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+} 

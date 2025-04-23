@@ -1,0 +1,15 @@
+[build]
+  command = "# no build command"
+  functions = "netlify/functions"
+  publish = "public"
+
+[[redirects]]
+  from = "/v1/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/edge/v1/*"
+  to = "/.netlify/edge-functions/api/:splat"
+  status = 200
+  edge = true 

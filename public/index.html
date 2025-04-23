@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrokProxy - Serverless Grok to OpenAI API Proxy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2d2d2d;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .note {
+            background-color: #fffaf0;
+            border-left: 4px solid #ffa500;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GrokProxy</h1>
+        <p>A serverless proxy that converts Grok API calls to OpenAI API format.</p>
+        
+        <div class="note">
+            <strong>Note:</strong> This is an API endpoint, not a website. You won't see much here in your browser.
+        </div>
+        
+        <h2>How to Use</h2>
+        <p>Set your OpenAI API base URL to:</p>
+        <pre><code>https://your-deployment-url.com/v1</code></pre>
+        
+        <p>Then use your Grok API key as the OpenAI API key in your application.</p>
+        
+        <h2>Supported Endpoints</h2>
+        <ul>
+            <li><code>/v1/chat/completions</code> - Chat completions API</li>
+            <li><code>/v1/completions</code> - Text completions API</li>
+            <li><code>/v1/embeddings</code> - Text embeddings API</li>
+            <li><code>/v1/models</code> - List available models</li>
+        </ul>
+        
+        <h2>Environment Variables</h2>
+        <ul>
+            <li><code>GROK_API_KEY</code> - Your Grok API key (if not provided in requests)</li>
+            <li><code>GROK_API_BASE</code> - Optional override for Grok API base URL</li>
+        </ul>
+        
+        <h2>GitHub</h2>
+        <p>Source code is available on GitHub: <a href="https://github.com/YOURUSER/grokproxy">github.com/YOURUSER/grokproxy</a></p>
+    </div>
+</body>
+</html> 
