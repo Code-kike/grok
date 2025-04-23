@@ -31,7 +31,7 @@ Grok API 的格式与 OpenAI API 不同，但有许多工具专为 OpenAI API �
   * `/v1`（例如 `/v1/chat/completions` 端点）
   * `/edge/v1`
 
-### 部署到 Cloudflare
+### 部署到 Cloudflare（暂不可用）
 
 * 可以通过 CLI 部署：`wrangler deploy`
 * 本地服务：`wrangler dev`
